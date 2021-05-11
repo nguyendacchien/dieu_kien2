@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<!--<h1>DO YOU LOVE ME?</h1>-->
+<!--<button onclick="onmouseover()">YES</button>-->
+<!--<button onclick="onmouseover()">NO</button>-->
+<!--<script>-->
+<!--    math.floor(math.random()*10) + 1;-->
+<!--</script>-->
+<script>
+    let a = new Array(), n = "";
+    a[1] = 'Y';
+    a[2] = 'Ê';
+    a[3] = 'U';
+    a[4] = ' ';
+    a[5] = 'A';
+    a[6] = 'N';
+    a[7] = 'H';
+    a[8] = ' ';
+    a[9] = 'K';
+    a[10] = 'H';
+    a[11] = 'Ô';
+    a[12] = 'N';
+    a[13] = 'G';
+    a[14] = ' ';
+    a[15] = 'E';
+    a[16] = 'M';
+    a[17] = ' ';
+    a[18] = 'Ê';
+    a[19] = 'I';
+    a[20] = ' ';
+    a[21] = '!';
+    a[22] = '!';
+
+    function typeTextarea() {
+        t = document.f.txt.value;
+        j = t.length;
+        if (j > 0) {
+            for (var i = 1; i <= j; i++) {
+                n = n + a[i];
+                if (i == 22) {
+                    document.f.txt.value = "";
+                    n = "";
+                }
+            }
+        }
+        document.f.txt.value = n;
+        n = "";
+        setTimeout("typeTextarea()", 1);
+    }
+</script>
+</head>
+<body style="background-color: pink">
+<center>
+    <h2 style="color:greenyellow">NHẬP THEO Ý MUỐN ❤ 💟</h2>
+    <form name="f">
+        <textarea name="txt" cols="40" rows="10" onkeydown="typeTextarea();"></textarea>
+    </form>
+</center>
+</body>
+</html>
